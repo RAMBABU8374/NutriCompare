@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -18,6 +19,15 @@ mongoose.connect(
 )
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
+
+app.use(express.static(path.join(__dirname, "../frontend")));
+
+app.get("/", (req,res)=>{
+
+  res.sendFile(
+    path.join(__dirname, "../frontend/signup.html")
+  );
+});
 
 app.listen(5000, () => {
   console.log("Server Running on Port 5000");
