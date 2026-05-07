@@ -24,13 +24,3 @@ Backend:
 - Node.js
 - Express.js
 
-Database:
-- MongoDB Atlas
-
-## Live Demo
-
-Add Railway URL here
-
-## GitHub Repository
-
-Add GitHub repo link here
