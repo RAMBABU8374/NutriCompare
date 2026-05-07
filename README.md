@@ -1,4 +1,3 @@
-
 # NutriCompare
 
 NutriCompare is a full-stack food comparison web application.
